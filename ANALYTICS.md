@@ -12,6 +12,7 @@ This guide helps you add website analytics to track visitor statistics and behav
   - [Privacy-Friendly Alternatives](#privacy-friendly-alternatives)
     - [Pirsch Analytics](#pirsch-analytics)
     - [Openpanel Analytics](#openpanel-analytics)
+    - [Simple Analytics](#simple-analytics)
   - [Monitoring &amp; Performance](#monitoring--performance)
     - [Cronitor](#cronitor)
   - [GDPR and Privacy Considerations](#gdpr-and-privacy-considerations)
@@ -125,6 +126,25 @@ If you're concerned about user privacy or GDPR compliance, consider these altern
 
 ---
 
+### Simple Analytics
+
+**Best for:** Easy setup and privacy compliance
+
+- ✅ GDPR, PECR, and CCPA compliant
+- ✅ European servers
+- ✅ Free tier available
+- ✅ Easy setup
+- ✅ No cookie consent needed
+
+**Setup:**
+
+1. Sign up at [simpleanalytics.com](https://www.simpleanalytics.com/)
+2. Enter website domain name
+3. In `_config.yml`, set `enable_simple_analytics: true`
+4. Commit and push
+
+---
+
 ## Monitoring & Performance
 
 ### Cronitor
@@ -156,8 +176,9 @@ If you're in the European Union or serve EU visitors, consider GDPR requirements
 
 ### Privacy-first services (No GDPR cookie banner needed)
 
-- ✅ Pirsch Analytics
-- ✅ Openpanel Analytics
+- ✅ [Pirsch Analytics](https://docs.pirsch.io/privacy)
+- ✅ [Openpanel Analytics](https://openpanel.dev/articles/cookieless-analytics)
+- ✅ [Simple Analytics](https://docs.simpleanalytics.com/compliance-faq)
 
 ### Services requiring cookie consent
 
@@ -173,6 +194,7 @@ If you're in the European Union or serve EU visitors, consider GDPR requirements
 | **Google Analytics** | ✅           | ⚠️ Requires consent | Easy   | Detailed reports | Detailed tracking          |
 | **Pirsch**           | ✅ Free tier | ✅                  | Easy   | Balanced         | GDPR compliance            |
 | **Openpanel**        | ✅           | ✅                  | Medium | Modern dashboard | Privacy-focused developers |
+| **Simple Analytics** | ✅Free tier  | ✅                  | Easy   | Simple overview  | Ease of use                |
 | **Cronitor**         | Paid         | ⚠️ Requires consent | Easy   | Uptime + RUM     | Uptime monitoring          |
 
 ---

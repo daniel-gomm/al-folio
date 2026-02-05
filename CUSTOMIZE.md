@@ -62,7 +62,7 @@ Here we will give you some tips on how to customize the website. One important t
     - [How it works](#how-it-works)
     - [Configuration](#configuration-1)
     - [Disable related posts for a specific post](#disable-related-posts-for-a-specific-post)
-    - [Additional configuration in _config.yml](#additional-configuration-in-_configyml)
+    - [Additional configuration in \_config.yml](#additional-configuration-in-_configyml)
   - [Managing publication display](#managing-publication-display)
   - [Adding a Google Calendar](#adding-a-google-calendar)
     - [Basic usage](#basic-usage)
@@ -1256,20 +1256,22 @@ In this folder you need to store your file in the same format as you would in `_
 
 ## GDPR Cookie Consent Dialog
 
-**al-folio** includes a built-in GDPR-compliant cookie consent dialog to help you respect visitor privacy and comply with privacy regulations (GDPR, CCPA, etc.). The feature is powered by [Vanilla Cookie Consent](https://cookieconsent.orestbida.com/) and integrates with all analytics providers.
+**al-folio** includes a built-in GDPR-compliant cookie consent dialog to help you respect visitor privacy and comply with privacy regulations (GDPR, CCPA, etc.). The feature is powered by [Vanilla Cookie Consent](https://cookieconsent.orestbida.com/) and integrates with all [analytics providers](ANALYTICS.md).
 
 ### How it works
 
 - A consent dialog appears on the visitor's first visit to your site
 - Visitors can **accept all**, **reject all**, or **customize preferences** for analytics cookies
-- Analytics scripts (Google Analytics, Cronitor, Pirsch, Openpanel) are **blocked by default** and only run after explicit consent
+- Analytics scripts (Google Analytics, Cronitor, Pirsch, Openpanel, SimpleAnalytics) are **blocked by default** and only run after explicit consent
 - Google Consent Mode ensures Google services operate in privacy mode before consent is granted
 - User preferences are saved in their browser and respected on subsequent visits
 - The dialog is mobile-responsive and supports multiple languages
 
 ### When to use
 
-- ✅ **Required** if your site serves EU visitors and uses any analytics
+- ✅ **Required** if your site serves visitors from the EU or other regions with strict privacy regulations and:
+  - uses analytics that rely on cookies (e.g., Google Analytics, Cronitor RUM)
+  - embeds and loads third-party contents that themselves require consent (e.g., YouTube videos)
 - ✅ Recommended for any website using analytics, tracking, or marketing tools
 - ❌ Not needed if your site doesn't use any analytics providers
 
