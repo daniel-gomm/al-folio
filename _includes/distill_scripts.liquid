@@ -264,6 +264,15 @@
     src="https://openpanel.dev/op1.js"
   ></script>
 {% endif %}
+{% if site.enable_simple_analytics %}
+  <script
+    {% if site.enable_cookie_consent %}
+      type="text/plain" data-category="analytics"
+    {% endif %}
+    async
+    src="https://scripts.simpleanalyticscdn.com/latest.js"
+  ></script>
+{% endif %}
 
 {% if site.enable_progressbar %}
   <!-- Scrolling Progress Bar -->

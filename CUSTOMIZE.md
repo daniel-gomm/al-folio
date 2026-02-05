@@ -1324,6 +1324,7 @@ When cookie consent is enabled, these analytics providers are automatically bloc
 - **Cronitor RUM** – Real User Monitoring for performance tracking
 - **Pirsch Analytics** – GDPR-compliant analytics alternative
 - **Openpanel Analytics** – Privacy-focused analytics platform
+- **Simple Analytics** - Lightweight GDPR, PECR & CCPA compliant analytics
 
 Each provider only collects data if:
 
